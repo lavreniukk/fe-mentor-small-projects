@@ -1,0 +1,24 @@
+{
+  "name": "fe_mentor_small_projects",
+  "version": "1.0.0",
+  "description": "\"# fe_mentor_small_projects\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lavreniukk/fe_mentor_small_projects.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lavreniukk/fe_mentor_small_projects/issues"
+  },
+  "homepage": "https://github.com/lavreniukk/fe_mentor_small_projects#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
