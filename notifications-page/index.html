@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Notifications page</title>
+</head>
+<body>
+<main>
+  <section class="nav">
+    <div>
+      <h1>Notifications </h1><span id="count" class="not-zero">3</span>
+    </div>
+    <button class="read-btn" onclick="readAll()">Mark all as read</button>
+  </section>
+  
+  <section class="message unread">
+    <img class="profile" src="images/avatar-mark-webber.webp" alt="mark">
+
+    <div class="message-body">
+      <p>
+        <a class="name">Mark Webber</a> reacted to your recent post <a>My first tournament today!</a>
+      </p>
+      <div>1m ago</div>
+    </div>
+  </section>
+
+  <section class="message unread">
+    <img class="profile" src="images/avatar-angela-gray.webp" alt="angela">
+
+    <div class="message-body">
+      <p>
+        <a class="name">Angela Gray</a> followed you
+      </p>
+      <div>5m ago</div>
+    </div>
+  </section>
+
+  <section class="message unread">
+    <img class="profile" src="images/avatar-jacob-thompson.webp" alt="jacob">
+
+    <div class="message-body">
+      <p>
+        <a class="name">Jacob Thompson</a> has joined your group <a>Chess Club</a>
+      </p>
+      <div>1 day ago</div>
+    </div>
+  </section>
+
+  <section class="message read">
+    <img class="profile" src="images/avatar-rizky-hasanuddin.webp" alt="rizky">
+
+    <div class="message-body">
+      <p>
+        <a class="name">Rizky Hasanuddin</a> sent you a private message
+      </p>
+      <div>5 days ago</div>
+      <p class="message-text">
+        Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+        I'm already having lots of fun and improving my game.
+      </p>
+    </div>
+    
+  </section>
+
+  <section class="message read">
+    <img class="profile" src="images/avatar-kimberly-smith.webp" alt="kimberly">
+
+    <div class="message-body">
+      <p>
+        <a class="name">Kimberly Smith</a> commented on your picture
+      </p>
+      <div>1 week ago</div>
+    </div>
+
+    <a>
+      <img src="images/image-chess.webp" alt="chess">
+    </a>
+  </section>
+
+  <section class="message read">
+    <img class="profile" src="images/avatar-nathan-peterson.webp" alt="nathan">
+
+    <div class="message-body">
+      <p>
+        <a class="name">Nathan Peterson</a> reacted to your recent post <a>5 end-game strategies to increase your win rate</a>
+      </p>
+      <div>2 weeks ago</div>
+    </div>
+  </section>
+
+  <section class="message read">
+    <img class="profile" src="images/avatar-anna-kim.webp" alt="anna">
+
+    <div class="message-body">
+      <p>
+        <a class="name">Anna Kim</a> left the group <a>Chess Club</a>
+      </p>
+      <div>2 weeks ago</div>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
