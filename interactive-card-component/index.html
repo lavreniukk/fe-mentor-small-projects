@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+<main>
+    <picture>
+        <source media="(max-width: 767px)" srcset="images/bg-main-mobile.png">
+        <source media="(min-width: 768px)" srcset="images/bg-main-desktop.png">
+        <img src="images/bg-main-desktop.png" alt="background">
+    </picture>
+
+    <div class="container">
+      <section class="cards">
+        <div class="card-front">
+          <img class="card-img" src="images/bg-card-front.png" alt="card-front">
+          <img class="card-logo" src="images/card-logo.svg" alt="logo">
+  
+          <div class="card-info">
+            <div class="card-num-display">
+              0000 0000 0000 0000
+            </div>
+            <div class="card-name-display">
+              Jane Appleseed
+            </div>
+            <div class="card-date-display">
+              00/00
+            </div>
+          </div>
+        </div>
+  
+        <div class="card-back">
+          <img class="card-img" src="images/bg-card-back.png" alt="card-front">
+          <div class="card-cvv-display">
+            000
+          </div>
+        </div>
+      </section>
+  
+      Cardholder Name
+      e.g. Jane Appleseed
+  
+      Card Number
+      e.g. 1234 5678 9123 0000
+  
+      Exp. Date (MM/YY)
+      MM
+      YY
+  
+      CVC
+      e.g. 123
+  
+      Confirm
+  
+      <!-- Completed state start -->
+  
+      Thank you!
+      We've added your card details
+      Continue
+    </div>
+</main>
+</body>
+</html>
