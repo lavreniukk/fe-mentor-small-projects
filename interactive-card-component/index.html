@@ -13,8 +13,8 @@
 <body>
 <main>
     <picture>
-        <source media="(max-width: 767px)" srcset="images/bg-main-mobile.png">
-        <source media="(min-width: 768px)" srcset="images/bg-main-desktop.png">
+        <source media="(max-width: 1010px)" srcset="images/bg-main-mobile.png">
+        <source media="(min-width: 1011px)" srcset="images/bg-main-desktop.png">
         <img src="images/bg-main-desktop.png" alt="background">
     </picture>
 
@@ -28,11 +28,11 @@
             <div class="card-num-display">
               0000 0000 0000 0000
             </div>
-            <div class="card-name-display">
+            <div class="card-name-display inline-display">
               Jane Appleseed
             </div>
-            <div class="card-date-display">
-              00/00
+            <div class="card-date-display inline-display">
+              <span class="month">00</span>/<span class="year">00</span>
             </div>
           </div>
         </div>
@@ -44,28 +44,52 @@
           </div>
         </div>
       </section>
-  
-      Cardholder Name
-      e.g. Jane Appleseed
-  
-      Card Number
-      e.g. 1234 5678 9123 0000
-  
-      Exp. Date (MM/YY)
-      MM
-      YY
-  
-      CVC
-      e.g. 123
-  
-      Confirm
-  
-      <!-- Completed state start -->
-  
-      Thank you!
-      We've added your card details
-      Continue
+
+      <section class="forms">
+        <form >
+        <label for="cardholder-name"> Cardholder Name <br>
+          <input id="cardholder-name" class="cardholder-name" type="text" name="cardholder-name" placeholder="e.g. Jane Appleseed"
+          oninput="inputName()">
+          <p id="error-name-display"></p>
+        </label>
+        
+
+        <label for="card-number"> Card Number <br>
+          <input id="card-number" class="card-number" type="text" name="card-number" placeholder="e.g. 1234 5678 9123 0000"
+          oninput="inputNum()">
+          <p id="error-num-display"></p>
+        </label>
+        
+
+        <div class="date-cvc-row">
+          <label class="date-label" for="date"> Exp. Date (MM/YY) <br>
+            <input id="date" class="date-month" type="text" name="date" placeholder="MM" oninput="inputMonth()">
+            <input id="date" class="date-year" type="text" name="date" placeholder="YY" oninput="inputYear()">
+            <p id="error-date-display"></p>
+          </label>
+          
+          
+          <label for="cvc"> CVC <br>
+            <input id="cvc" class="cvc" type="text" name="cvc" placeholder="e.g. 123" oninput="inputCVC()">
+            <p id="error-cvc-display"></p>
+          </label>
+        </div>
+
+        <button type="submit" class="submit"> Confirm </button>
+        </form>
+
+        <div class="submit-message">
+          <img src="images/icon-complete.svg" alt="complete">
+
+          <h2> Thank you!</h2>
+          <p> We've added your card details </p>
+          <button id="complete"> Continue</button>
+        </div>
+      </section>
+
     </div>
 </main>
+
+<script src="script.js"></script>
 </body>
 </html>
