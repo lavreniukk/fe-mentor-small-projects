@@ -4,12 +4,7 @@
     box-sizing: border-box;
 }
 
-body, html, .container {
-    height: 100%;
-    overflow: hidden;
-}
-
-main {
+.container {
     height: 100%;
     font-family: 'Space Grotesk', sans-serif;
 }
@@ -62,6 +57,7 @@ section.cards {
 }
 
 .card-back {
+    width: 300px;
     position: relative;
     top: 175px;
     left: 90px;
@@ -78,6 +74,8 @@ section.cards {
 
 .card-cvv-display {
     position: relative;
+    margin: 0;
+    width: 100px;
     top: 98px;
     left: 320px;
     color:hsl(0, 0%, 100%);
@@ -90,6 +88,7 @@ section.forms {
     bottom: 170px;
     left: 55%;
     width: 400px;
+    height: 500px;
 }
 
 form p {
