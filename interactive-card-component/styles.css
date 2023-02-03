@@ -4,13 +4,14 @@
     box-sizing: border-box;
 }
 
-main {
-    height: 100vh;
-    font-family: 'Space Grotesk', sans-serif;
+body, html, .container {
+    height: 100%;
+    overflow: hidden;
 }
 
-.container {
-    height: 100vh;
+main {
+    height: 100%;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 picture {
