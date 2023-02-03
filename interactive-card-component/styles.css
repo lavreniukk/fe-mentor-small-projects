@@ -5,7 +5,12 @@
 }
 
 main {
+    height: 100vh;
     font-family: 'Space Grotesk', sans-serif;
+}
+
+.container {
+    height: 100vh;
 }
 
 picture {
